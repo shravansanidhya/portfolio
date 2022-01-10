@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="js/typed.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">PORTFO<span>LIO</span></div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Skills</a>
+				<a href="#">Services</a>
+				<a href="#">Contact</a>
+			</div>
+		</nav>
+
+		<div class="text">
+			<p>Hello, I am </p>
+			<h1>Shravan Sanidhya</h1>
+			<p>And I am a <span id="role" style="color: #e74c3c"></span></p>
+			<button class="c-btn">Hire Me</button>
+		</div>
+	</header>
+
+	<section id="about">
+			<div class="section-info">
+				<h1>About</h1>
+				<p>Who i am?</p>
+			</div>			
+			<div class="about-row">
+				<div class="about-left-col">
+					<img src="images/about.jpg">
+				</div>
+				<div class="about-right-col">
+					<p id="p-title">
+						Hello, I am Shravan Sanidhya & I am a <span id="role2" style="color: #e74c3c"></span>
+					</p>
+					<p>
+						Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+					</p>
+					<button class="c-btn">Download CV</button>
+				</div>
+			</div>
+			</section>
+
+		<section id="skills">
+			<div class="section-info">
+				<h1 style="color: white">Skills</h1>
+				<p>What i know?</p>
+			</div>
+			<div class="skills-row">
+				<div class="skills-left-col">
+					<p>
+						Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+					</p>
+					<button class="c-btn">Read More</button>
+				</div>
+				<div class="skills-right-col">
+					<div class="progress-div">
+						<p>
+						<span>Java</span><br>
+						<progress value="80" max="100"></progress>
+						<span>80%</span>
+						</p>
+						<p>
+						<span>Spring Boot</span><br>
+						<progress value="90" max="100"></progress>
+						<span>90%</span>
+						</p>
+						<p>
+						<span>MySql</span><br>
+						<progress value="85" max="100"></progress>
+						<span>85%</span>
+						</p>
+						<p>
+						<span>Angular</span><br>
+						<progress value="80" max="100"></progress>
+						<span>80%</span>
+						</p>
+						<p>
+						<span>Devops</span><br>
+						<progress value="70" max="100"></progress>
+						<span>70%</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services">
+			<div class="section-info">
+				<h1>Services</h1>
+				<p>What we provide?</p>
+			</div>
+			<div class="services-row">
+				<div class="services-box" data-tilt>
+					<img src="images/b2.png">
+					<h2>Web Design</h2>
+					<p>Web design is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+				</div>
+				<div class="services-box" data-tilt>
+					<img src="images/b2.png">
+					<h2>Web Development</h2>
+					<p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+				</div>
+				<div class="services-box" data-tilt>
+					<img src="images/b2.png">
+					<h2>App Development</h2>
+					<p>App development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="section-info" style="color: white">
+				<h1>Get In Touch</h1>
+				<p style="color: black">We are Available</p>
+			</div>
+			<div class="contact-row">
+				<div class="contact-left-col">
+					<img src="images/b3.png">
+				</div>
+				<div class="contact-right-col">
+					<form>
+						<h2>Connect with us</h2>
+						<input type="text" name="name" placeholder="Name">
+						<input type="email" name="email" placeholder="email">
+						<br>
+						<textarea cols="40" rows="10" placeholder="Message"></textarea><br>
+						<button class="c-btn">Submit</button>
+					</form>
+				</div>
+				
+			</div>	
+		</section>
+
+		<section id="footer">
+			<h2>Developed by <br>Shravan Sanidhya</h2>
+			<img src="images/icon.png" width="100">
+		</section>
+
+		<script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+		<script>
+			jQuery(document).ready(function(){
+				$('header').ripples({
+  				dropRadius: 20,
+  				perturbance: 0.03,
+			});
+			})
+		</script>
+		<script>
+			let animate=new Typed('#role',{
+				strings:["Full Stack Java Developer","Youtuber","Blogger"],
+				typeSpeed:100,
+				backSpeed: 100,
+				loop: true,
+			})
+		</script>
+		<script>
+			let animate2=new Typed('#role2',{
+				strings:["Full Stack Java Developer","Youtuber","Blogger"],
+				typeSpeed:100,
+				backSpeed: 100,
+				loop: true,
+			})
+		</script>
+		<script src="js/tilt.jquery.min.js"></script>
+</body>
+</html>
